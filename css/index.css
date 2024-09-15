@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
 
-* {
-  margin: 0.5em auto;
+body {
+  margin: 0 auto;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
   text-align: center;
 }
 
-#coffee-list {
+#drink-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
@@ -42,4 +42,59 @@ h1 {
 
 img {
   width: 60%;
+}
+
+.drink-name {
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+
+.like-dislike-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-btn,
+.dislike-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#ingredient-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  align-self: center;
+}
+
+#ingredient-info > h2,
+ul {
+  color: rgb(85, 24, 1);
+  font-size: 1.4rem;
+  font-family: "Playpen Sans", cursive;
+}
+
+#done-btn {
+  justify-content: flex-start;
+  display: inline-block;
+  margin: 0.3em auto;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: rgb(117, 255, 255);
+  color: rgb(3, 32, 85);
+  border-radius: 0.3em;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#done-btn:hover {
+  background-color: aquamarine;
 }
