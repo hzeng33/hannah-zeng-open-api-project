@@ -104,7 +104,7 @@ fetch("https://api.sampleapis.com/coffee/hot")
   });
 
 //Fetch iced coffees
-const icedCoffeeToShow = ["Iced Coffee", "Frappuccino"];
+const icedCoffeeToShow = ["Iced Coffee", "Frappuccino", "Mazagran"];
 fetch("https://api.sampleapis.com/coffee/iced")
   .then((response) => {
     if (!response.ok) {
