@@ -4,7 +4,7 @@ Welcome to The Drink Corner, a simple webpage showcasing different coffee drinks
 
 ## Features
 
-- View Ingredients: Click on a drink image to display its ingredients at the bottom of the page.
+- View Ingredients: Click on a drink image to display its ingredients at a new webpage.
 - Like/Dislike: Show your preference for each drink by clicking the heart (like) or sad face (dislike) emoji. The counts will be updated accordingly.
 
 ## Instructions to Run Locally
