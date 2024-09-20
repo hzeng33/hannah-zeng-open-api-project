@@ -39,22 +39,15 @@ function likeDislikeButton(drinkId) {
 
 //Function to show ingredients.
 function showIngredients(title, ingredients) {
-  ingredientInfo.style.display = "";
-  ingredientInfo.innerHTML = `<h2>Ingredients for ${title}</h2>
-    <ul id="ingredient-list"></ul>
-    <button id="done-btn">Done</button>`;
+  const params = new URLSearchParams();
+  params.set("title", title);
+  params.set("ingredients", JSON.stringify(ingredients));
 
-  const ingredentList = document.getElementById("ingredient-list");
+  window.location.href = `ingredients.html?${params.toString()}`;
+  
 
-  ingredients.forEach((ingredient) => {
-    const ingredientItem = document.createElement("li");
-    ingredientItem.textContent = ingredient;
-    ingredentList.appendChild(ingredientItem);
-  });
 
-  document.getElementById("done-btn").addEventListener("click", () => {
-    ingredientInfo.style.display = "none"; //clear ingredient section
-  });
+ 
 }
 
 //Function to create a drink card.
