@@ -44,10 +44,6 @@ function showIngredients(title, ingredients) {
   params.set("ingredients", JSON.stringify(ingredients));
 
   window.location.href = `ingredients.html?${params.toString()}`;
-  
-
-
- 
 }
 
 //Function to create a drink card.
@@ -87,7 +83,7 @@ fetch("https://api.sampleapis.com/coffee/hot")
     const hotCoffees = data;
     console.log(hotCoffees);
 
-    for (let i = 0; i < hotCoffees.length - 8; i++) {
+    for (let i = 0; i < hotCoffees.length - 2; i++) {
       const drinkItem = createDrinkCard(hotCoffees[i]);
       drinkList.appendChild(drinkItem);
     }
@@ -108,7 +104,7 @@ fetch("https://api.sampleapis.com/coffee/iced")
   })
   .then((data) => {
     const icedCoffees = data;
-    //console.log(icedCoffees);
+    console.log(icedCoffees);
 
     const filtedIcedCoffee = icedCoffees.filter((coffee) =>
       icedCoffeeToShow.includes(coffee.title)
